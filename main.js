@@ -1,6 +1,6 @@
 // Initialize Phaser, and create a game
 var screenWidth = 1024;
-var screenHeight = 800;
+var screenHeight = 600;
 var game = new Phaser.Game(screenWidth, screenHeight, Phaser.CANVAS, 'gameContainer');
 
 var updatesCounter = 0;
@@ -13,7 +13,8 @@ var mainState = {
 
     preload: function() {
 		game.load.crossOrigin = 'anonymous';
-		loadImages(game);
+		game.load.image('background', 'https://source.unsplash.com/1024x600/?grass');
+		game.load.image('pokemon', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png');
    },
 
     create: function() {
@@ -48,7 +49,7 @@ function createPokemon() {
 	// 'pikachu', 'kyogre', 'bikkuriman', 'bsquadron1'
 
 	// Display the Pokemon on the screen
-	var pokemon = game.add.sprite(horizontalPosition, verticalPosition, 'pikachu');
+	var pokemon = game.add.sprite(horizontalPosition, verticalPosition, 'pokemon');
 
 	// Enables all kind of input actions on this image (click, etc)
 	pokemon.inputEnabled = true;
