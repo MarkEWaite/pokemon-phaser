@@ -59,10 +59,10 @@ function createPokemon() {
  	var verticalPosition = 0;
 
 	// We already have several pre-defined shapes.
-	// 'pikachu', 'kyogre', 'bikkuriman', 'bsquadron1'
+	// 'bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon', 'squirtle', 'wartortle', 'metapod', 'butterfree'
 
 	// Display the Pokemon on the screen
-	var pokemon = game.add.sprite(horizontalPosition, verticalPosition, 'pokemon');
+	var pokemon = game.add.sprite(horizontalPosition, verticalPosition, 'charmander');
 
 	// Enables all kind of input actions on this image (click, etc)
 	pokemon.inputEnabled = true;
