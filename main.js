@@ -14,12 +14,17 @@ var mainState = {
     preload: function() {
 		game.load.crossOrigin = 'anonymous';
 
-	        // Load the background image
-	        // game.load.image('background', 'http://d4k.wwilk.com/assets/background.jpg');
-		game.load.image('background', 'http://d4k.wwilk.com/assets/background2.jpg');
-		// game.load.image('background', 'https://source.unsplash.com/1024x600/?grass');
+	        // Load a background image
+		game.load.image('background', 'https://source.unsplash.com/1024x600/?colorado');
 
-		game.load.image('pokemon', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png');
+		// See https://www.pokemon.com/us/pokedex/ for the association of Pokemon to number
+		game.load.image('pokemon', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png'); // charmander
+		game.load.image('bulbasaur', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png');
+		game.load.image('ivysaur', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png');
+		game.load.image('venusaur', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png');
+		game.load.image('charmander', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png');
+		game.load.image('charmeleon', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png');
+		game.load.image('squirtle', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png');
    },
 
     create: function() {
