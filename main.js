@@ -13,7 +13,12 @@ var mainState = {
 
     preload: function() {
 		game.load.crossOrigin = 'anonymous';
-		game.load.image('background', 'https://source.unsplash.com/1024x600/?grass');
+
+	        // Load the background image
+	        // game.load.image('background', 'http://d4k.wwilk.com/assets/background.jpg');
+		game.load.image('background', 'http://d4k.wwilk.com/assets/background2.jpg');
+		// game.load.image('background', 'https://source.unsplash.com/1024x600/?grass');
+
 		game.load.image('pokemon', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png');
    },
 
