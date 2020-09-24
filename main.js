@@ -8,6 +8,10 @@ var caughtPokemons = 0;
 // var score = 0;
 var message = null;
 
+// See https://www.pokemon.com/us/pokedex/ for the association of Pokemon to number
+var pokemon_names_and_images = { 'bulbasaur' : 1, 'ivysaur' : 2, 'venusaur' : 3, 'charmander' : 4, 'charmeleon' : 5,
+                                 'squirtle' : 7, 'wartortle' : 8, 'metapod' : 11, 'butterfree' : 12 };
+
 // Create our 'main' state that will contain the game
 var mainState = {
 
