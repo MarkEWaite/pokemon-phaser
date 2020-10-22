@@ -9,7 +9,7 @@ var caughtPokemons = 0;
 var message = null;
 
 // See https://www.pokemon.com/us/pokedex/ for the association of Pokemon to number
-var pokemon_names_and_images = {
+var pokedexData = {
   'bulbasaur': 1,
   'ivysaur': 2,
   'venusaur': 3,
@@ -32,8 +32,8 @@ var mainState = {
 
     // See https://www.pokemon.com/us/pokedex/ for the association of Pokemon to number
     var pokedexURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
-    for (var pokemonName in pokemon_names_and_images) {
-      game.load.image(pokemonName, pokedexURL + pokemon_names_and_images[pokemonName] + '.png');
+    for (var pokemonName in pokedexData) {
+      game.load.image(pokemonName, pokedexURL + pokedexData[pokemonName] + '.png');
     }
   },
 
