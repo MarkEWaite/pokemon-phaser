@@ -62,14 +62,15 @@ var mainState = {
 
 function createPokemon() {
   // Select initial x position of the pokemon randomly
-  var horizontalPosition = parseInt(screenWidth * Math.random());
-  var verticalPosition = 0;
+  var horizontal = parseInt(screenWidth * Math.random());
+  var vertical = 0;
 
   // We already have several pre-defined shapes.
-  // 'bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon', 'squirtle', 'wartortle', 'metapod', 'butterfree'
+  // 'bulbasaur', 'ivysaur', 'venusaur', 'charmander',
+  // 'charmeleon', 'squirtle', 'wartortle', 'metapod', 'butterfree'
 
   // Display the Pokemon on the screen
-  var pokemon = game.add.sprite(horizontalPosition, verticalPosition, 'charmander');
+  var pokemon = game.add.sprite(horizontal, vertical, 'charmander');
 
   // Enables all kind of input actions on this image (click, etc)
   pokemon.inputEnabled = true;
