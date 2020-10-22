@@ -70,7 +70,8 @@ function createPokemon() {
   // 'charmeleon', 'squirtle', 'wartortle', 'metapod', 'butterfree'
 
   // Display the Pokemon on the screen
-  var pokemon = game.add.sprite(horizontal, vertical, 'charmander');
+  var pokemon = game.add.sprite(horizontal, vertical,
+                                'charmander');
 
   // Enables all kind of input actions on this image (click, etc)
   pokemon.inputEnabled = true;
